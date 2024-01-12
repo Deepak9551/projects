@@ -1,0 +1,5 @@
+const open = document.getElementById('open')
+const close = document.getElementById('close')
+const containers = document.querySelector('.container')
+open.addEventListener('click', () => containers.classList.add('show-nav'))
+close.addEventListener('click', () => containers.classList.remove('show-nav'))
