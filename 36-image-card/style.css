@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto',sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column;  */
+    height: 100vh;
+    /* overflow: hidden; */
+    margin: 0;
+    
+}
+.carosuel{
+    box-shadow: 2px 2px 5px rgba(0,0,0,1);
+    height: 530px;
+    width: 500px;
+    overflow: hidden;
+}
+img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+  background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; 
+    
+}
+.image-container{
+    display: flex;
+    /* transform: translateX(0); */
+    transform: translateX(-500px);
+    transition: transform 0.5 ease-in-out;
+}
+.buttons-container{
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    background-color: rebeccapurple;
+    color: #fff;
+    border: none ;
+    padding: 0.5rem;
+    cursor: pointer;
+    width: 50%;
+}
+.btn:hover{
+    opacity: 0.9;
+}
+.btn:focus{
+    outline: none;
+}
